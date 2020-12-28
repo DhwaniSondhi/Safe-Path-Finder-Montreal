@@ -12,8 +12,6 @@ This application aims to draw an optimal path on a map ignoring the high crime r
 - Keep the related files like 'crime_dt.shp' and other related files in the folder you are working in.
 - Run the code.
 
-
-
 ## Working
 The "crime_dt.shp" file and the input grid size is used to generate grids accumulated using statistics such as total count, mean or standard deviation. Depending on the given threshold, we define the high(YELLOW) and low(BLUE) crime rate blocks. Following are the maps created with various threshold values:
 ![](https://github.com/DhwaniSondhi/Safe-Path-Finder-Montreal/blob/master/docs/images/thresholdmaps.PNG)
@@ -23,7 +21,7 @@ Following ***heuristic function*** is used which takes the x value as the x coor
 heuristicValue(node) = max{abs(node.x - goal.x), abs(node.y - goal.y)} 
 ```
 ## Outputs
-Following are the maps with optimal paths generated for each algorithm where A* algorithm has shown better efficiency.
+Following are the maps with optimal paths generated for each algorithm where the A* algorithm has shown better efficiency.
 ### Best First Search algorithm
 <img src="https://github.com/DhwaniSondhi/Safe-Path-Finder-Montreal/blob/master/docs/images/best-first%20search.PNG" width="650" height="375" />
 
